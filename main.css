@@ -2,19 +2,20 @@
     box-sizing: border-box;
   }
   
+  html, main {
+      width: 100%;
+  }
   body {
-    font-family: "Open Sans",
-    sans-serif; 
+    font-family: "Open Sans", sans-serif; 
     font-size: 20px;
-    color: #444;
     text-align: center;
     line-height: 1.5;
+    width: 100%;
   }
   
   nav,
   footer {
-    padding: 1% 0;
-    background-color: #aaa;
+    background-color: black;
   }
   
   nav {
@@ -24,14 +25,233 @@
     right: 0;
     z-index: 10;
   }
+
+  footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+  }
+
+  a {
+      text-decoration: none;
+      color: white;
+  }
+
+  a.contact {
+      color: black;
+  }
+  a.demo {
+      color: black;
+      padding: 10px;
+      font-size: 32px;
+  }
+
+  a.git {
+      color: black;
+      font-size: 40px;
+  }
+
+  ul.nav-bar {
+      float: right;  
+      padding-right: 20px; 
+      margin-top: 10px;
+      margin-bottom: 10px;   
+  }
+
+  ul.contact-li {
+    padding: 0px;
+    font-size: 80px;
+    margin-top: 140px;
+    text-align: right;
+  }
+
+  ul.demo-li {
+      padding: 0px;
+      margin-bottom: 40px;
+  }
+
+  ul.demo-li li {
+      font-size: 40px; 
+  }
+
+  li {
+      list-style: none;
+      display: inline;
+      padding: 10px;
+  }
+
+  li.nav {
+    font-size: 18px;
+    display: inline;
+    margin-left: 15px;
+  }
   
   header {
     padding: 12% 0;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
   
   section {
-    min-height: 200px;
+    min-height: 1000px;
     padding: 6% 0;
-    background-color: #bbb;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  h1, h2, h3, ul.demo-li li {
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+
+  h2 {
+      font-size: 52px;
+      margin-bottom: 20px;
   }
   
+  h3 {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  h1.header-name {
+    font-size: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+  p.position {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 32px;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  p.tech {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  img.headshot {
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-height: 500px;
+  }
+
+  img.projects {
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    color: white;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+
+
+  @media only screen and (max-width: 640px) {
+      img.headshot {
+          width: 80%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+
+      header {
+          height: 800px;
+      }
+
+      h1.header-name {
+          font-size: 48px;
+          margin-top: 140px;
+      }
+
+      p.position {
+          font-size: 16px;
+          margin-top: 0px;
+      }
+
+      p {
+          margin-top: 0px;
+      }
+
+      hr.header-hr {
+          margin-top: 0px;
+      }
+
+      footer {
+        padding: 6px;
+      }
+
+      ul.nav-bar {
+        float: none;
+        padding: 0px;
+      }
+      
+      li.nav {
+          font-size: 12px;
+          margin-left: 0px;
+      }
+
+      h2 { 
+          font-size: 24px;
+          margin-top: 60px;
+      }
+
+      h3 {
+          font-size: 20px;
+          margin-top: 20px;
+      }
+
+      p {
+          font-size: 16px;
+      }
+
+      p.tech {
+          font-size: 12px;
+          margin-bottom: 10px;
+      }
+
+      ul.contact-li {
+        padding: 0px;
+        font-size: 36px;
+        margin-top: 40px;
+        text-align: right;
+    }
+
+    ul.demo-li li {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    li.mail {
+        padding-right: 0px;
+    }
+    a.demo {
+        font-size: 18px;
+    }
+
+    a.git {
+        font-size: 24px;
+        margin-right: 6px;
+    }
+
+    img.projects {
+        width: 100%;
+    }
+  }

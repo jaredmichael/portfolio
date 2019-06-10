@@ -1,105 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Jared Juan - Full Stack Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ecedbad61a.js"></script>
 </head>
+
 <body>
-    <nav role="navigation">Jared Michael</nav>
+    <nav role="navigation">
+        <ul class="nav-bar">
+            <li class="nav"><a href="#about">ABOUT</a></li>
+            <li class="nav"><a href="#projects">PROJECTS</a></li>
+            <li class="nav"><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
     <main role="main">
-        <header role="header">
-            <h1>Hafa Adai and Welcome!</h1>
-            <p>The names Juan, Jared Juan and I am a full stack web developer.</p>
-            <img>
+        <header role="header" id="contact">
+            <h1 class="header-name">Jared Juan</h1>
+            <hr class="header-hr">
+            <p class="position">WEB DEVELOPER</p>
+
+            <ul class="contact-li">
+                    <li><a class="contact" href="https://github.com/jaredmichael/"><i class="fab fa-github"></i></a></li>
+                    <li><a class="contact" href="https://www.linkedin.com/in/jared-michael-juan-946846128"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="mail"><a class="contact" href="mailto:jaredmichael.a_juan@yahoo.com"><i class="far fa-envelope"></i></a></li>
+            </ul>
         </header>
 
-        <section class="about">
-            <h2>Get to know me</h2>
-            <p>I am a recent graduate of the Full Stack Development bootcamp at Thinkful.
-                I enjoy coding because I am great at solving problems and I love seeing 
-                project ideas come to fruition on the screen.  
-                
-                I am an active and social one.  I love being outdoors and getting sand 
-                under my feet. I travel the world when I can and learning about new 
-                cultures and their eats make me all giddy inside. Most of all I love 
-                basketball and can escape into a court induced euphoria with a ball in 
-                my hand.  I believe life is lived to learn and become your best self and
-                I enjoy the process of this principle everyday.</p>
+        <section id="about">
+            <h2>ABOUT ME</h2>
+            <hr>
+
+            <img class="headshot" src="docs/profile-pic.png" />
+            <p>The name is Juan, Jared Juan. I am a graduate of the Full Stack Bootcamp at
+                Thinkful. With coding I enjoy the challenge of solving problems and I love seeing
+                project ideas come to fruition on the screen.</br></br>
+
+                I am very active and social. In my free time I enjoy being outdoors and getting sand
+                under my feet. I love to travel, learning about new
+                cultures and their eats make me all giddy inside. Most of all, I love
+                basketball and I can escape into a court induced euphoria with a ball in
+                my hand.</br></br>
+
+                I believe life is lived to learn and become your best self.
+                Thus I enjoy the process of this principle everyday.
+            </p>
         </section>
 
-        <section class="projects">
-            <h2>Check out my projects</h2>
+        <section id="projects">
+            <h2>PROJECTS</h2>
+            <hr>
+
             <div>
-                <h3>Kobe Quiz</h3>
+                <h3>Swish Stats</h3>
+                <p class="tech">HTML - CSS - JavaScript - jQuery - Express - Node.js - React - Redux - Mocha -
+                    Chai - Mongo - Mongoose</p>
 
+                <a href="https://swish-stats-client-app.herokuapp.com/" target="_blank"><img src="docs/swish-stats.png"
+                        class="projects" /></a>
                 <p>
-                    Test your mental knowledge about all things Kobe Bryant and determine if 
-                    your a Kobe stan with this 10 question Kobe Bryant Quiz.
+                    The ultimate basketball stat tracker. Register and create a player profile,
+                    create a stat sheet to track game stats in real time. Track your stats,
+                    find your efficiencies and inefficiencies to figure out how to improve.
                 </p>
-
-                <p class="tech">HTML CSS JavaScript jQuery</p>
-                
-                <ul>
-                    <li>Repl.it</li>
-                    <li>Demo</li>
+                <ul class="demo-li">
+                    <li>
+                        <a class="git" href="https://github.com/jaredmichael/swish-stats-client-app" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a> Source
+                    </li>
+                    <li>
+                        <a class="demo" href="https://swish-stats-client-app.herokuapp.com/" target="_blank">
+                            <i class="fas fa-play"></i>
+                        </a> Demo
+                    </li>
                 </ul>
             </div>
 
-            <div>
-                <h3>OnStage</h3>
+            <hr>
 
-                <p>Search for an artist or band to see what acts are going on stage near you.
+            <div>
+                <h3>Goal Getter</h3>
+                <p class="tech">HTML - CSS - JavaScript - jQuery - Express - Node.js - Mocha - Chai - Mongo - Mongoose
                 </p>
 
-                <p class="tech">HTML CSS JavaScript jQuery Bandsintown API</p>
-
-                <ul>
-                    <li>GitHub</li>
-                    <li>Demo</li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>Goals</h3>
-
+                <a href="https://goal-getter-app.herokuapp.com/" target="_blank"><img src="docs/goal-getter.png"
+                        class="projects" /></a>
                 <p>
-                    Create and keep track of all your goals in one place.  Create a mantra for
-                    each goal to reinforce confidence as you tackle your goal.  Set goals, 
+                    Create and keep track of all your goals in one place. Create a mantra for
+                    each goal to reinforce confidence as you tackle your goal. Set goals,
                     achieve dreams!
                 </p>
 
-                <p class="tech">HTML CSS JavaScript jQuery Express Node.js Mocha Chai Chai-http Mongo Mongoose</p>
-
-                <ul>
-                    <li>GitHub</li>
-                    <li>Demo</li>
+                <ul class="demo-li">
+                    <li>
+                        <a class="git" href="https://github.com/jaredmichael/goals-app" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a> Source
+                    </li>
+                    <li>
+                        <a class="demo" href="https://goal-getter-app.herokuapp.com/" target="_blank">
+                            <i class="fas fa-play"></i>
+                        </a> Demo
+                    </li>
                 </ul>
             </div>
 
-            <div>
-                    <h3>Swish Stats</h3>
-    
-                    <p>
-                        The ultimate basketball stat tracker. Register and create a player profile, 
-                        create a stat sheet to track game stats in real time.  Track your stats, 
-                        find your efficiencies and inefficiencies to figure out how to improve.    
-                    </p>
-    
-                    <p class="tech">HTML CSS JavaScript jQuery Express Node.js React Redux Mocha Chai Chai-http Mongo Mongoose</p>
-    
-                    <ul>
-                        <li>GitHub</li>
-                        <li>Demo</li>
-                    </ul>
-                </div>
-        </section>
+            <hr>
 
-        <section>
-            <h2>Lets Connect</h2>
+            <div>
+                <h3>ON/STAGE</h3>
+                <p class="tech">HTML - CSS - JavaScript - jQuery - Bandsintown API</p>
+                <a href="https://jaredmichael.github.io/on-stage" target="_blank"><img src="docs/on-stage.png"
+                        class="projects" /></a>
+                <p>Search for an artist or band to see what acts are going on stage near you.
+                </p>
+
+
+                <ul class="demo-li">
+                    <li>
+                        <a class="git" href="https://github.com/jaredmichael/on-stage" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a> Source
+                    </li>
+                    <li>
+                        <a class="demo" href="https://jaredmichael.github.io/on-stage" target="_blank">
+                            <i class="fas fa-play"></i>
+                        </a> Demo
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div>
+                <h3>Kobe Quiz</h3>
+                <p class="tech">HTML - CSS - JavaScript - jQuery</p>
+
+                <a href="https://kobe-quiz-app--jaredmiichael-.repl.co/" target="_blank"><img src="docs/kobe-quiz.png"
+                        class="projects" /></a>
+                <p>
+                    Test your mental knowledge about all things Kobe Bryant and determine if
+                    you're a Kobe stan with this 10 question Kobe Bryant Quiz.
+                </p>
+
+
+                <ul class="demo-li">
+                    <li>
+                        <a class="git" href="https://github.com/jaredmichael/swish-stats-client-app" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a> Source
+                    </li>
+                    <li>
+                        <a class="demo" href="https://kobe-quiz-app--jaredmiichael-.repl.co/" target="_blank">
+                            <i class="fas fa-play"></i>
+                        </a> Demo
+                    </li>
+                </ul>
+            </div>
+
         </section>
     </main>
-    <footer role="content-info">Jared Michael Artero Juan</footer>
+
+    <footer role="footer">Jared Juan Copyright 2019</footer>
 </body>
+
 </html>
