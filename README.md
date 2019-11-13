@@ -1,5 +1,4 @@
 # Portfolio
-This portfolio showcases the projects I have created through Thinkful's Full Stack Bootcamp.
+Welcome and thanks for finding me on GitHub! 
 
-## Built With
-HTML CSS
+This repo is for my portfolio site which you may view here https://jaredmichael.github.io/portfolio
