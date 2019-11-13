@@ -34,14 +34,21 @@
       z-index: 10;
   }
 
+  hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
   a {
       text-decoration: none;
       color: white;
   }
 
-  a.contact {
+  a.contact, a.arrows {
       color: black;
   }
+
+
   a.demo {
       color: black;
       padding: 10px;
@@ -63,13 +70,23 @@
   ul.contact-li {
     padding: 0px;
     font-size: 80px;
-    margin-top: 140px;
+    margin-top: 100px;
+    margin-bottom: 40px;
     text-align: right;
+  }
+
+  ul.about-contact-li {
+    text-align: center;
+    font-size: 50px;
+    margin: 0px;
+    padding-left: 0px;
   }
 
   ul.demo-li {
       padding: 0px;
       margin-bottom: 40px;
+      text-align: left;
+
   }
 
   ul.demo-li li {
@@ -79,7 +96,6 @@
   li {
       list-style: none;
       display: inline;
-      padding: 10px;
   }
 
   li.nav {
@@ -90,18 +106,26 @@
   
   header {
     padding: 12% 0;
-    height: 1000px;
+    height: 800px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
   }
   
   section {
-    min-height: 1000px;
-    padding: 6% 0;
+    min-height: 900px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 90%;
+  }
+
+  .project {
+    display: inline-block;
+  }
+
+  .project-info {
+    float: left;
+    width: 25%;
   }
 
   h1, h2, h3, ul.demo-li li {
@@ -144,15 +168,32 @@
   }
   img.headshot {
     border-radius: 30px;
-    margin-top: 40px;
     margin-bottom: 20px;
-    max-height: 500px;
+    max-height: 480px;
+  }
+
+  .about-profile {
+    display: inline-block;
+  }
+
+  .about-pic {
+    float: left;
+    width: 45%;
+  }
+
+  .about-info {
+    float: right;
+    width: 50%
+  }
+
+  .arrows {
+    margin-bottom: 60px;
   }
 
   img.projects {
     border-radius: 10px;
-    width: 80%;
-    margin-top: 10px;
+    width: 70%;
+    margin-top: 55px;
     margin-bottom: 10px;
   }
 
@@ -172,8 +213,13 @@
           margin-bottom: 10px;
       }
 
+      hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
       header {
-          height: 800px;
+          height: 600px;
       }
 
       h1.header-name {
@@ -181,13 +227,19 @@
           margin-top: 140px;
       }
 
+      a.contact {
+        font-size: 30px;
+      }
+
+
       p.position {
           font-size: 16px;
           margin-top: 0px;
       }
 
       p {
-          margin-top: 0px;
+          margin-top: 10px;
+          text-align: justify;
       }
 
       hr.header-hr {
@@ -203,6 +255,10 @@
         padding: 0px;
       }
       
+      ul.demo-li {
+        margin-bottom: 20px;
+      }
+
       li.nav {
           font-size: 12px;
           margin-left: 0px;
@@ -210,16 +266,16 @@
 
       h2 { 
           font-size: 24px;
-          margin-top: 60px;
+          margin-top: 40px;
       }
 
       h3 {
           font-size: 20px;
-          margin-top: 20px;
+          margin-top: 0px;
       }
 
       p {
-          font-size: 16px;
+          font-size: 14px;
       }
 
       p.tech {
@@ -231,6 +287,7 @@
         padding: 0px;
         font-size: 36px;
         margin-top: 40px;
+        margin-bottom: 90px;
         text-align: right;
     }
 
@@ -246,12 +303,17 @@
         font-size: 18px;
     }
 
+    .arrows {
+      font-size: 16px;
+    }
+
     a.git {
         font-size: 24px;
         margin-right: 6px;
     }
 
-    img.projects {
+    img.projects, .about-pic, .about-info, .project-info {
         width: 100%;
+        margin-top: 0px;
     }
   }
